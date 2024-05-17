@@ -1,0 +1,171 @@
+.Book{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 1rem;
+       margin-top:10rem;
+       scroll-margin-top:12rem;
+       scroll-behavior: smooth;
+      
+}
+
+.Book h4{
+       font-size: 20px;
+       font-weight: 800;
+       margin-right:44rem;
+      
+}
+
+.book-form{
+       display: flex;
+       gap:5rem;
+       width:820px;
+       flex-wrap: wrap;
+}
+
+.book-form .form-element{
+       display: flex;
+       flex-direction: column;
+       gap:1.5rem;
+}
+.form-element:nth-child(2),
+.form-element:nth-child(3),
+.form-element:nth-child(5) {
+       margin-left:6rem;
+}
+
+.form-element label{
+       font-size:16px;
+      font-weight:700;
+}
+
+.form-element label .form-icon{
+       font-size:20px;
+       color: rgb(42, 71, 230);
+}
+
+.form-element label .dot {
+       font-size:25px;
+       color: rgb(42, 71, 230);
+}
+
+.form-element select, input{
+       border: none;
+       outline: none;
+       color: rgb(186, 177, 177);
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+             
+       
+}
+
+
+
+.book-form button.form-search{
+              width:220px;
+              height: 40px;
+              background-color: rgb(42, 71, 230);
+              color: #fff;
+              font-weight: 800;
+              cursor: pointer;
+              border: none;
+              margin-top: 2rem;
+              padding: 5px;
+              box-shadow: 0px 4px 8px rgba(42, 71, 230, 0.3);
+              margin-left:7rem;
+              
+}
+
+.book-result .match{
+       margin-top:4rem;
+       font-size: 20px;
+}
+
+.error{
+       color: red;
+       margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+
+       .Book{
+              margin-left:4rem;
+       }
+
+.Book h4 {
+              font-size:15px;
+              white-space: nowrap;
+              margin-right:32rem;
+
+       }
+
+       .book-form {
+               display: flex;
+               gap:2rem;
+               width:600px;
+               flex-wrap: wrap;
+              }
+
+
+                            .form-element:nth-child(2),
+                            .form-element:nth-child(3),
+                            .form-element:nth-child(5) {
+                                   margin-left:2rem;
+                            }
+.form-element label {
+       font-size:13px;
+       
+}
+
+.form-element label .form-icon {
+       font-size:16;
+      
+}
+
+.form-element select,
+input {
+       font-size: 11px;
+
+}
+
+.book-form button.form-search {
+       width: 100px;
+       height: 40px;
+       font-size: 11px;
+}
+}
+
+@media only screen and (max-width:320px) {
+
+       .Book h4 {
+              font-size: 19px;
+              white-space: nowrap;
+              margin-right: 11rem;
+
+       }
+
+       .book-form {
+              margin-left: 20rem;
+       }
+
+
+       .form-element label {
+              font-size: 16px;
+
+       }
+
+       .form-element label .form-icon {
+              font-size: 17;
+
+       }
+
+
+
+       .book-form button.form-search {
+
+              margin-left: 2rem;
+       }
+
+}

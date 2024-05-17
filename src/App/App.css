@@ -1,0 +1,147 @@
+.app{
+display: flex;
+gap:13rem;
+margin-top:10rem;
+text-align: center;
+justify-content: center;
+
+}
+
+.App-left{
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+       margin-top:3rem;
+       text-align: left;
+}
+
+.App-left h1{
+       font-weight: 800;
+       width:400px;
+}
+
+.App-left p {
+       font-size: 15px;
+       width: 400px;
+
+}
+
+.download{
+       display: flex;
+       gap: 1px;
+}
+
+.download img.google{
+width: 150px;
+height: 150px;
+transform: translateY(-23%);
+cursor: pointer;
+
+}
+
+.download img.apple {
+       width:200px;
+       height:75px;
+       cursor:pointer;
+       
+       
+       
+}
+
+.App-right img{
+       width:350px;
+       height:450px;
+       object-fit: cover;
+}
+
+@media only screen and (max-width:768px) {
+
+.app {
+gap:5rem;
+
+             
+
+       }
+
+
+.App-left h1 {
+              font-size:16px;
+       }
+
+.App-left p{
+       width:300px;
+       font-size: 14px;
+}
+
+       
+.download img.google {
+              width: 100px;
+              height:120px;
+              transform: translateY(-15%);
+              cursor: pointer;
+
+       }
+
+       .download img.apple {
+              width:140px;
+              height:60px;
+              cursor: pointer;
+              margin-top:0.8rem;
+
+
+       }
+
+.App-right img {
+       width:200px;
+       height:250px;
+       object-fit: cover;
+       margin-top: 2rem;
+}
+}
+
+
+@media only screen and (max-width:320px) {
+       .app {
+              display: flex;
+              flex-direction: column;
+              margin-left:8rem;
+              gap:1rem;
+              
+       }
+
+              .App-left h1 {
+                     font-size:20px;
+              }
+
+       .App-left h1 {
+              font-size:18px;
+                            }
+       
+       
+              .download img.google {
+                     width: 120px;
+                     height: 135px;
+                     transform: translateY(-15%);
+                     cursor: pointer;
+       
+              }
+       
+              .download img.apple {
+                     width: 150px;
+                     height: 70px;
+                     cursor: pointer;
+       
+       
+              }
+       
+              .App-right img {
+                     width:250px;
+                     height:320px;
+                     object-fit: cover;
+                     margin-left:3rem;
+                     
+              }
+              
+
+
+}

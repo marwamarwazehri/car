@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+.nav{
+       display: flex;
+       justify-content: space-between;
+      top: 0;
+       border-radius: 5px;
+       scroll-behavior: smooth;
+      
+       
+}
+
+.nav_one{
+       display:flex;
+       width: 100px;
+       gap: 5px;
+       margin-left: 7rem;
+       margin-top:1rem;
+       
+
+}
+
+.nav_one .car-icon{
+       font-size:60px;
+       color: rgb(42, 71, 230);
+       transform: scaleX(-1);
+       margin-top:1rem;
+}
+
+
+.nav_one h5 span{
+      font-weight: 700;
+       font-size: 22px;
+       margin-top: 0;
+       position: relative;
+       top: 10px;
+
+}
+
+.nav_one h5{
+       font-weight:normal;
+       font-size:18px;
+       color: rgb(32, 32, 32);
+       margin-top:10px;
+       
+       
+}
+
+.nav-two{
+       display: flex;
+       gap: 1rem;
+       margin-top: 3rem;
+       display: none;
+       
+}
+
+.nav-two a{
+       text-decoration: none;
+       font-size:17px;
+       font-weight:700;
+       color: black;
+       position: relative;
+       height: fit-content;
+
+}
+.nav-two a:hover{
+       color: rgb(42, 71, 230);
+}
+
+.nav-two a::after {
+       content: '';
+       position: absolute;
+       left:1px;
+       bottom:0;
+       top:23px;
+       width: 0;
+      height: 2px;
+       background-color: rgb(42, 71, 230);
+      transition: width 0.3s ease;
+       
+}
+
+.nav-two a:hover::after {
+       width:100%;
+      
+       /* Increase width to 100% on hover */
+}
+
+.nav-two .active {
+       color: rgb(42, 71, 230);
+}
+
+.nav-two .active::after{
+
+            content: '';
+              position: absolute;
+              left: 1px;
+              bottom: 0;
+              top: 23px;
+              width:100%;
+              height: 2px;
+             
+
+}
+
+
+.nav-three{
+       display: flex;
+       gap: 1rem;
+       margin-right:4rem;
+}
+
+.nav-three button.sign{
+       border: none;
+       background-color: transparent;
+       font-weight: 700;
+       font-size:17px;
+       cursor: pointer;
+       margin-top: 1rem;
+       
+
+}
+
+.nav-three button.sign:hover{
+ color: rgb(42, 71, 230);
+}
+
+.nav-three button.register{
+       width:80px;
+       height:40px;
+       background-color:rgb(42, 71, 230) ;
+       color: #fff;
+       font-weight: 700;
+       cursor: pointer;
+       border: none;
+       margin-top: 2rem;
+       border-radius:5px;
+       padding:5px;
+       box-shadow: 0px 4px 8px rgba(42, 71, 230, 0.3);
+       margin-right:2rem;
+}
+
+.nav-three button.register:hover{
+
+       transform: scale(1.1);
+       transition: transform 0.1s;
+}
+
+
+.circle{
+       display: none;
+}
+
+
+.side-bar{
+       display: none;
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+.nav_one .car-icon {
+              font-size:40px;
+              
+       }
+
+
+       .nav_one h5 span {
+              font-weight: 700;
+              font-size:20px;
+              margin-top: 0;
+              position: relative;
+              top: 10px;
+
+       }
+
+       .nav_one h5 {
+              font-weight: normal;
+              font-size: 16px;
+              color: rgb(32, 32, 32);
+              margin-top: 10px;
+
+
+       }
+
+.nav-three button.sign {
+       
+       font-size: 15px;
+       margin-top: 2rem;
+}
+
+
+
+
+}
+
+@media only screen and (max-width:320px){
+
+.nav-three {
+             
+            margin-left:15rem;
+       }
+
+ .nav-three button.sign {
+       
+      white-space: nowrap;
+}
+}
+
