@@ -52,7 +52,7 @@ const Footer = () => {
                 <p>Mon-Fri:closed</p>
             </div>
 
-            <div className="footer-item2">
+            <div className="footer-item2 end">
                 <span className="header">SUBSCRIPTION</span>
                 <p className="subscribe">Subscribe your Email address for latest news & updates</p>
                 <form onSubmit={submitEmail}>

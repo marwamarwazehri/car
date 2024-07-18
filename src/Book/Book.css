@@ -7,6 +7,8 @@
        margin-top:10rem;
        scroll-margin-top:12rem;
        scroll-behavior: smooth;
+       max-width:100%;
+       
       
 }
 
@@ -14,6 +16,7 @@
        font-size: 20px;
        font-weight: 800;
        margin-right:44rem;
+       white-space: nowrap;
       
 }
 
@@ -87,85 +90,41 @@
        color: red;
        margin-bottom: 1rem;
 }
-
-@media only screen and (max-width:768px) {
-
-       .Book{
-              margin-left:4rem;
-       }
-
-.Book h4 {
-              font-size:15px;
-              white-space: nowrap;
-              margin-right:32rem;
-
-       }
-
-       .book-form {
-               display: flex;
-               gap:2rem;
-               width:600px;
-               flex-wrap: wrap;
-              }
-
-
-                            .form-element:nth-child(2),
-                            .form-element:nth-child(3),
-                            .form-element:nth-child(5) {
-                                   margin-left:2rem;
-                            }
-.form-element label {
-       font-size:13px;
-       
-}
-
-.form-element label .form-icon {
-       font-size:16;
-      
-}
-
-.form-element select,
-input {
-       font-size: 11px;
-
-}
-
-.book-form button.form-search {
-       width: 100px;
-       height: 40px;
-       font-size: 11px;
+/*////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width:973px) {
+.Book{
+       margin-left: 4rem;
 }
 }
-
-@media only screen and (max-width:320px) {
-
-       .Book h4 {
-              font-size: 19px;
-              white-space: nowrap;
-              margin-right: 11rem;
-
+@media screen and (max-width:873px) {
+       .Book {
+              margin-left:10rem;
        }
-
-       .book-form {
-              margin-left: 20rem;
-       }
-
-
-       .form-element label {
-              font-size: 16px;
-
-       }
-
-       .form-element label .form-icon {
-              font-size: 17;
-
-       }
-
-
-
-       .book-form button.form-search {
-
-              margin-left: 2rem;
-       }
-
 }
+
+@media screen and (max-width:784px) {
+       .Book {
+              margin-left: 15rem;
+       }
+}
+
+@media screen and (max-width:688px) {
+       .Book {
+              margin-left: 22rem;
+       }
+}
+
+@media screen and (max-width:592px) {
+       .Book {
+              margin-left:26rem;
+       }
+}
+
+@media screen and (max-width:491px) {
+       .Book {
+              margin-left:30rem;
+       }
+}
+
+
+    

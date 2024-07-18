@@ -75,72 +75,9 @@ gap:1rem;
        margin-top:15px;
 }
 
-@media only screen and (max-width:768px){
 
-       .tes {
-                     margin-bottom: 0rem;
-                     
-                   
-              }
-       .tes-up h4 {
-                     font-size: 13px;
-              }
-       
-              .tes-up h1 {
-                     font-size: 19px;
-              }
-       
-              .tes-up p {
-                     width:500px;
-                     font-size: 15px;
-              }
 
-.review-text {
-       width:250px;
-}
 
-.review .review-text q {
-      
-       font-size:15px;
 
-}
 
-.review-person {
-      
-       gap:5rem
-}
-
-.review-person-one img {
-      
-       height: 50px;
-       
-}
-
-.quote {
-       font-size:22px;
-       
-}
-
-.person-name h4{
-       font-size:15px;
-}
-.person-name p{
-       font-size: 13px;
-}
-}
-
-@media only screen and (max-width:320px) {
-       
-       .tes-down {
-             flex-direction: column;
-              }
-
-       .tes{
-              margin-left:20rem;
-       }
-
-.person-name h4 {
-       white-space: nowrap;
-              }
-}
 

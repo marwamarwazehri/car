@@ -45,14 +45,6 @@ const [sideBar, setSideBar] = useState(false);
               <FaCarSide className='car-icon'/>
               <h5><span>CAR</span> Rental</h5>
        </div>
-<div className='nav-two'>
-        <a className={activeLink === 0 ? 'active' : ''} href="#home" onClick={() => handleLinkClick(0)}>Home</a>
-        <a className={activeLink === 1 ? 'active' : ''} href="#About" onClick={() => handleLinkClick(1)}>About</a>
-        <a className={activeLink === 2 ? 'active' : ''} href="#vehicle" onClick={() => handleLinkClick(2)}>Vehicle Models</a>
-        <a className={activeLink === 3 ? 'active' : ''} href="#testimonials" onClick={() => handleLinkClick(3)}>Testimonials</a>
-        <a className={activeLink === 4 ? 'active' : ''} href="#team" onClick={() => handleLinkClick(4)}>Our Team</a>
-        <a className={activeLink === 5 ? 'active' : ''} href="#contact" onClick={() => handleLinkClick(5)}>Contact</a>
-      </div>
 
        <div className='nav-three'>
               <button className='sign'>Sign in</button>
@@ -60,35 +52,11 @@ const [sideBar, setSideBar] = useState(false);
 
        </div>
 
-      <div className={sideBar ? 'circle hide' : 'circle'} onClick={toggleSideBar}>
-       <div className='nav-icon'>
-        <RxHamburgerMenu/>
-       </div>
-       </div>
-        <AnimatePresence>
-       <motion.div className={sideBar ? 'side-bar ' : 'side-bar hidden'}
-          variants={variants}
-         animate={sideBar ? "open" : "closed"}
+      
+      
         
-       >
-         <div className='sidebar-links'>
-           <a className={activeLink === 0 ? 'active' : ''} href="#home" onClick={() => handleLinkClick(0)}>Home</a>
-        <a className={activeLink === 1 ? 'active' : ''} href="#About" onClick={() => handleLinkClick(1)}>About</a>
-        <a className={activeLink === 2 ? 'active' : ''} href="#vehicle" onClick={() => handleLinkClick(2)}>Vehicle Models</a>
-        <a className={activeLink === 3 ? 'active' : ''} href="#testimonials" onClick={() => handleLinkClick(3)}>Testimonials</a>
-        <a className={activeLink === 4 ? 'active' : ''} href="#team" onClick={() => handleLinkClick(4)}>Our Team</a>
-        <a className={activeLink === 5 ? 'active' : ''} href="#contact" onClick={() => handleLinkClick(5)}>Contact</a>
-        
-        <IoCloseSharp className='cancel' onClick={()=>setSideBar(false)}/>
-         </div>
-         <div className='sidebar-buttons'>
-             <button className='sign'>Sign in</button>
-            <button className='register'>Register</button>
-         </div>
 
-
-       </motion.div>
-       </AnimatePresence>
+      
 
       
     </div>
